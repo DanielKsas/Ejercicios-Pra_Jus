@@ -76,13 +76,13 @@ if(vacasArray[i] %2===0){
 }
 
 // 6. tenga un array
-/*
+
 const nombres = ["Ana", "Juan", "Diego", "Laura"];
 let nombre = nombres.lastIndexOf("Diego") + 1
-let nombreTwo = nombre.lastIndexOf("Laura") +1
+let nombreTwo = nombres.lastIndexOf("Laura") +1    
 
-console.log("hola" + " " + nombre + " " + nombreTwo)
-*/
+console.log("hola, estos son los indices" + " " + nombre + " " + nombreTwo)
+ 
 
 // Ahora, si tengo "Diego", quiero que me diga en qué indice del array está
 // añadale ese índice a una variable y lo muestra en consola
