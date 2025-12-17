@@ -207,27 +207,27 @@ comprobarSiUnEnteroEsPositivoYElOtroNegativo(10, -10)
 
 
 
-function ToCheckAge(arrayAges){
-let contador = 0;
-let promedio = 
-let = false
-arrayAges = []
-  
- for(let i = 0; i < arrayAges.length; i++){
+function ToCheckAge(arrayAges) {
+  let contador = 0;
+  let promedio =
+    let = false
+  arrayAges = []
 
-if(arrayAges[i] >= 18){
-  
-  
-}else{
-  return true
+  for (let i = 0; i < arrayAges.length; i++) {
 
+    if (arrayAges[i] >= 18) {
+
+
+    } else {
+      return true
+
+    }
+  }
+  return contador + arrayAges / arrayAges.length
 }
- }
- return contador + arrayAges / arrayAges.length
-}
 
 
-ToCheckAge([12, 20, 40 ])
+ToCheckAge([12, 20, 40])
 
 
 /* push agrega un elemento al final */
@@ -236,7 +236,7 @@ ToCheckAge([12, 20, 40 ])
 /* shift quita el primer elemento de un array*/
 
 
-arrayNumbers = [12,14,29,2,10,43,80]
+arrayNumbers = [12, 14, 29, 2, 10, 43, 80]
 
 arrayNumbers.push(0)
 arrayNumbers.push(3)
@@ -244,21 +244,21 @@ arrayNumbers.unshift(90)
 arrayNumbers.pop(8)
 arrayNumbers.pop(2)
 arrayNumbers.shift(3)
- 
-arrayNumbers [0] = 3
-console.log (arrayNumbers)
+
+arrayNumbers[0] = 3
+console.log(arrayNumbers)
 
 
 
 
- let productos = ["Manzana", "Pera", "Mango", "Banano"]
- let cantidades =[15, 20, 10, 50]
+let productos = ["Manzana", "Pera", "Mango", "Banano"]
+let cantidades = [15, 20, 10, 50]
 
 console.log(productos[1])
 
-cantidades [2] = 10+30
+cantidades[2] = 10 + 30
 
-console.log(productos + " " + " " +cantidades)
+console.log(productos + " " + " " + cantidades)
 
 
 /*
@@ -299,32 +299,32 @@ console.log(TotalTodoX2) */
 
 
 
-let arrayToPractice = [20,30,19,20,38]
+let arrayToPractice = [20, 30, 19, 20, 38]
 
 
 let oldArray = arrayToPractice.shift()
-let newArray = arrayToPractice.unshift(3,10,28)
+let newArray = arrayToPractice.unshift(3, 10, 28)
 
-console.log (arrayToPractice)
+console.log(arrayToPractice)
 
 let resultado = 0
 
-for(let i = 0; i < arrayToPractice.length; i++){
+for (let i = 0; i < arrayToPractice.length; i++) {
 
-resultado += arrayToPractice[i]
+  resultado += arrayToPractice[i]
 
 }
 console.log(resultado)
 
-function againToSum(arrayGemini){
- arrayGemini = [1,5,2]
-let total4 = 0
-for(let i = 0; i < arrayGemini.length; i++){
-  total4 += arrayGemini[i]
-}
+function againToSum(arrayGemini) {
+  arrayGemini = [1, 5, 2]
+  let total4 = 0
+  for (let i = 0; i < arrayGemini.length; i++) {
+    total4 += arrayGemini[i]
+  }
   return total4
 }
-console.log (againToSum())
+console.log(againToSum())
 
 /*Encontrar el Número Mayor
 Objetivo: Crear una función que reciba un
@@ -332,28 +332,28 @@ Objetivo: Crear una función que reciba un
 
 Ejemplo: [10, 3, 50, 7] debería devolver 50.*/
 
-function toFindTheLargestNumber(arrayMayor){
+function toFindTheLargestNumber(arrayMayor) {
 
-let maximo = arrayMayor [0]
+  let maximo = arrayMayor[0]
 
-for(let i = 1; i < arrayMayor.length; i++){
-if (arrayMayor[i] > maximo) {
-  maximo = arrayMayor[i]
+  for (let i = 1; i < arrayMayor.length; i++) {
+    if (arrayMayor[i] > maximo) {
+      maximo = arrayMayor[i]
+    }
+  }
+  return maximo
 }
-}
-return maximo
-}
-console.log(toFindTheLargestNumber([10,3,50,7]))
+console.log(toFindTheLargestNumber([10, 3, 50, 7]))
 
 
 
-let littleExample = [20,19,19,1,1]
+let littleExample = [20, 19, 19, 1, 1]
 let littleExampleResult = 0
 
 littleExample[0] = 15
 
-for(let i = 0; i < littleExample.length; i++)
-littleExampleResult += littleExample[i]
+for (let i = 0; i < littleExample.length; i++)
+  littleExampleResult += littleExample[i]
 
 
 
@@ -364,17 +364,17 @@ console.log(littleExampleResult)
 
 
 
-function NumbersMultiple(numberOne){
+function NumbersMultiple(numberOne) {
 
-  for(let i = 1; i <= 10; i++){
+  for (let i = 1; i <= 10; i++) {
 
-    
-    console.log (numberOne + "*"+ i + "=" + numberOne * i)
+
+    console.log(numberOne + "*" + i + "=" + numberOne * i)
   }
 
 
-  }
-   
+}
+
 console.log(NumbersMultiple(12))
 
 
@@ -397,20 +397,20 @@ output: [4, 8, 20, 24]
 
 */
 
-function arrayInAnArray(globalArray){
+function arrayInAnArray(globalArray) {
 
   let fatherArray = [];
   let childArray = [];
   let resultadoMulChilArray = 1;
   let resultadoFinalArray = [];
 
-  
-  for(let i = 0; i < globalArray.length; i++){
-    if(typeof globalArray[i] === 'number'){
+
+  for (let i = 0; i < globalArray.length; i++) {
+    if (typeof globalArray[i] === 'number') {
 
       fatherArray.push(globalArray[i]);
 
-    } else if(Array.isArray(globalArray[i])){
+    } else if (Array.isArray(globalArray[i])) {
       childArray.push(globalArray[i]);
     }
   }
@@ -418,13 +418,13 @@ function arrayInAnArray(globalArray){
 
   childArray = childArray.flat();
 
-  
-  for(let i = 0; i < childArray.length; i++){
+
+  for (let i = 0; i < childArray.length; i++) {
     resultadoMulChilArray *= childArray[i];
   }
 
-  
-  for(let i = 0; i < fatherArray.length; i++){
+
+  for (let i = 0; i < fatherArray.length; i++) {
     resultadoFinalArray.push(fatherArray[i] * resultadoMulChilArray);
   }
 
@@ -432,15 +432,15 @@ function arrayInAnArray(globalArray){
 }
 
 
-console.log(arrayInAnArray([1, 2, [2], 5, 6, [2]])); 
+console.log(arrayInAnArray([1, 2, [2], 5, 6, [2]]));
 
 
 
-function sumarTodo(n){
+function sumarTodo(n) {
   let total = 0;
 
-  for(let i = 0; i <=n; i++){
-    total +=i;
+  for (let i = 0; i <= n; i++) {
+    total += i;
   }
   return total
 }
@@ -458,21 +458,21 @@ console.log(sumarTodo(3))
 
 */
 
-function MayoresDiez(numeroArray){
+function MayoresDiez(numeroArray) {
 
 
 
   for (const recorrerArray of numeroArray) {
-    if(recorrerArray > 10){
+    if (recorrerArray > 10) {
       return true
+    }
+    else {
+      return false
+    }
   }
- else{
-  return false
- }
-}
 }
 
-console.log(MayoresDiez([12,42,52]))
+console.log(MayoresDiez([12, 42, 52]))
 
 /*
 
@@ -484,14 +484,14 @@ console.log(MayoresDiez([12,42,52]))
 
 */
 
-function ToCheckWord(wordTypedByUser){
- 
-if(wordTypedByUser.endsWith("script")){
+function ToCheckWord(wordTypedByUser) {
 
-  return true
-} else{
-  return false
-}
+  if (wordTypedByUser.endsWith("script")) {
+
+    return true
+  } else {
+    return false
+  }
 
 
 
@@ -512,13 +512,13 @@ console.log(ToCheckWord("scriptjava"))
 */
 
 
-function SearchString(fullWord, wordToFind){
+function SearchString(fullWord, wordToFind) {
 
-return fullWord.indexOf(wordToFind)
+  return fullWord.indexOf(wordToFind)
 }
 
 
-console.log(SearchString("Lenguaje de Marcado", "Marcado" ))
+console.log(SearchString("Lenguaje de Marcado", "Marcado"))
 
 
 /*
@@ -530,14 +530,14 @@ console.log(SearchString("Lenguaje de Marcado", "Marcado" ))
 
 */
 
-function yaNoSeQuePoner(arrayTyped){
+function yaNoSeQuePoner(arrayTyped) {
 
-let totalArray = arrayTyped.reverse()
+  let totalArray = arrayTyped.reverse()
 
-return totalArray
+  return totalArray
 }
 
-console.log(yaNoSeQuePoner([1,2,3,4,5]))
+console.log(yaNoSeQuePoner([1, 2, 3, 4, 5]))
 
 /*
 
@@ -548,9 +548,10 @@ console.log(yaNoSeQuePoner([1,2,3,4,5]))
   
 */
 
-function estoyCansadoDePonerNombres(justinCanson){
+function estoyCansadoDePonerNombres(justinCanson) {
 
-return  justinCanson.replace(/[aeiouAEIOU]/g, "x")}
+  return justinCanson.replace(/[aeiouAEIOU]/g, "x")
+}
 
 
 console.log(estoyCansadoDePonerNombres("Hola Mundo"))
@@ -564,13 +565,13 @@ console.log(estoyCansadoDePonerNombres("Hola Mundo"))
 
 */
 
-function retornarNumero(menorAmayor){
+function retornarNumero(menorAmayor) {
 
-let arrayOrdenado = menorAmayor.sort()
+  let arrayOrdenado = menorAmayor.sort()
 
-return arrayOrdenado
+  return arrayOrdenado
 }
-console.log(retornarNumero([1,5,3,4,2]))
+console.log(retornarNumero([1, 5, 3, 4, 2]))
 
 
 /*
@@ -602,6 +603,18 @@ console.log(stringAArray("Hola Mundo"));
 
 */
 
+function comprabarArray(numeroArrays){
+
+for(let i = 0; i < numeroArrays.length; i++){
+
+  if(numeroArrays[i] > 10){
+    return true
+  }
+}
+return false
+}
+
+console.log(comprabarArray([8,2,20,4,9]))
 
 
 
@@ -616,6 +629,26 @@ console.log(stringAArray("Hola Mundo"));
 
 */
 
+function vocalesMayusculas(texto) {
+  let resultado = "";
+
+  for (let i = 0; i < texto.length; i++) {
+    let caracter = texto[i];
+
+    if (
+      caracter === "a" || caracter === "e" || caracter === "i" ||
+      caracter === "o" || caracter === "u"
+    ) {
+      resultado += caracter.toUpperCase();
+    } else {
+      resultado += caracter;
+    }
+  }
+
+  return resultado;
+}
+
+console.log(vocalesMayusculas("Hola Mundo"));
 
 
 /*
@@ -626,14 +659,14 @@ console.log(stringAArray("Hola Mundo"));
   Ejemplo: (["a", "e" ,"vaca", "perro"]) = ["A", "E", "VACA", "PERRO"]
 
 */
-function arrayMayuscula(arrayEnMayuscula){
+function arrayMayuscula(arrayEnMayuscula) {
 
-let nuevoArrayEnMayuscula = []
+  let nuevoArrayEnMayuscula = []
 
-for(let i = 0; i < arrayEnMayuscula.length; i++){
- nuevoArrayEnMayuscula.push(arrayEnMayuscula[i].toUpperCase()) 
-}
-return nuevoArrayEnMayuscula
+  for (let i = 0; i < arrayEnMayuscula.length; i++) {
+    nuevoArrayEnMayuscula.push(arrayEnMayuscula[i].toUpperCase())
+  }
+  return nuevoArrayEnMayuscula
 }
 
 console.log(arrayMayuscula(["a", "e", "vaca", "perro"]))
@@ -655,14 +688,7 @@ function existePalabra(texto, palabra) {
 }
 
 
-console.log(existePalabra("Rojo, azul, verde, amarillo", "amarillo")); 
-
-
-
-
-
-
-
+console.log(existePalabra("Rojo, azul, verde, amarillo", "amarillo"));
 
 
 
@@ -679,7 +705,7 @@ console.log(existePalabra("Rojo, azul, verde, amarillo", "amarillo"));
 */
 
 
-function retornarStringMultiplicado(StringAMultiplicar, numeroAMultiplicar){
+function retornarStringMultiplicado(StringAMultiplicar, numeroAMultiplicar) {
 
   return StringAMultiplicar.repeat(numeroAMultiplicar)
 }
